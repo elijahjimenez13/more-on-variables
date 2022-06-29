@@ -1,0 +1,16 @@
+float SOUND_SPEED
+integer SEC_PER_HOUR
+float secBetween
+float timeInHours
+float distinMiles
+
+SOUND_SPEED = 761.207
+SEC_PER_HOUR = 3600
+
+// Get seconds between lightning and thunder
+secBetween = 7.0
+timeInHours = secBetween / SEC_PER_HOUR
+distinMiles = SOUND_SPEED * timeInHours
+
+Put "Miles from lightning strike: " to output
+Put distinMiles to output with 4 decimal places
